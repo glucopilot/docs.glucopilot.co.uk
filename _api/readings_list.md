@@ -25,9 +25,9 @@ right_code_blocks:
         {
           "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
           "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-          "created": "2025-04-06T13:20:05.685Z",
+          "created": "2025-04-06T14:39:00.848Z",
           "glucoseLevel": 0,
-          "direction": 1
+          "direction": "Decrease"
         }
       ]
     title: 200 OK
