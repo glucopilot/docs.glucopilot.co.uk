@@ -6,7 +6,7 @@ description: GlucoPilot API documentation.
 url: "https://docs.glucopilot.co.uk"
 google_analytics_key:
 permalink: pretty
-baseurl: "https://docs.glucopilot.co.uk"
+baseurl:
 
 # -----
 # Build
