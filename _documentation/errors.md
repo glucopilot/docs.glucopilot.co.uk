@@ -5,15 +5,15 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  | Code | Name | Returns | Description |
-  | --- | --- | --- | --- |
-  | 200 | OK | ~ | Success |
-  | 201 | Created | ~ | Creation Successful |
-  | 400 | Bad Request | ValidationProblem | We could not process that action due to an invalid request |
-  | 403 | Forbidden | ErrorResult | We couldn't authenticate you |
-  | 404 | Not Found | ErrorResult | The requested resource was not found |
-  | 409 | Conflict | ErrorResult | The requested resource is in conflict with the current state of the server |
-  | 500 | Internal Server Error | ErrorResult | An unexpected error occurred on the server |
+  | Code | Name | Description |
+  | --- | --- | --- |
+  | 200 | OK | Success |
+  | 201 | Created | Creation Successful |
+  | 400 | Bad Request | We could not process that action due to an invalid request |
+  | 403 | Forbidden | We couldn't authenticate you |
+  | 404 | Not Found | The requested resource was not found |
+  | 409 | Conflict | The requested resource is in conflict with the current state of the server |
+  | 500 | Internal Server Error | An unexpected error occurred on the server |
 
   Errors will return JSON in the following format:
 left_code_blocks:

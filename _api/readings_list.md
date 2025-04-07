@@ -1,5 +1,5 @@
 ---
-title: /api/v1/readings/
+title: /api/v1/readings
 position_number: 1.0
 type: get
 description: List readings
