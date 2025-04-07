@@ -1,30 +1,37 @@
 ---
-title: /api/v1/readings
-position_number: 2.1
-type: post
-description: Add reading
+title: /api/v1/meals
+position_number: 1.0
+type: get
+description: List meals
 parameters:
-  - name: created
-    content: Date and time the reading was taken
-  - name: glucoseLevel
-    content: Glucose level in mg/dL
+  - name: page
+    content: Page number to retrieve
+  - name: pageSize
+    content: Number of meals to retrieve per page
 content_markdown: |-
-  The reading will be added to your account.
-  {: .success }
+  Meals are ordered by date descending.
+  {: .info }
 
-  Adds a manual glucose reading to your account.
+  Paginates all meals.
 left_code_blocks:
   - code_block: |-
-      {
-        "created": "2025-04-07T21:07:36.719Z",
-        "glucoseLevel": 0
-      }
-    title: JSON
-    language: json
+      curl http://api.myapp.com/api/v1/meals?page=0&pageSize=10 \
+      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+    title: Curl
+    language: bash
 right_code_blocks:
   - code_block: |2-
-      "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-    title: 201 Created
+      {
+        "numberOfPages": 0,
+        "meals": [
+          {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "name": "string",
+            "created": "2025-04-07T23:07:22.802Z"
+          }
+        ]
+      }
+    title: 200 OK
     language: json
   - code_block: |2-
       {

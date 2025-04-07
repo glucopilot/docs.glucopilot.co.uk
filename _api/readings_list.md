@@ -1,6 +1,6 @@
 ---
 title: /api/v1/readings
-position_number: 1.0
+position_number: 2.0
 type: get
 description: List readings
 parameters:
@@ -15,7 +15,7 @@ content_markdown: |-
   Lists all the readings between the specified dates, ordered by date descending.
 left_code_blocks:
   - code_block: |-
-      curl http://api.myapp.com/api/v1/readings/ \
+      curl http://api.myapp.com/api/v1/readings \
       -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
     title: Curl
     language: bash
