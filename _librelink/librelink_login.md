@@ -1,34 +1,33 @@
 ---
-title: /api/v1/identity/login
-position_number: 1.2
+title: /api/v1/librelink/login
+position_number: 1.0
 type: post
-description: Authenticates a user
+description: LibreLink Authenticate
 parameters:
-  - name: email
-    content: User's email address
+  - name: username
+    content: The username of the LibreLink Up user
   - name: password
-    content: User's password
+    content: The password of the LibreLink Up user
 content_markdown: |-
-  The user is logged in and a JWT token is returned
-  {: .success}
-
-  Authenticates a user, returning a JWT token if successful.
+  Authenticates GlucoPilot patient with LibreLink Up.
 left_code_blocks:
   - code_block: |-
       {
-        "email": "user@example.com",
-        "password": "string",
+        "username": "string",
+        "password": "string"
       }
     title: JSON
     language: json
 right_code_blocks:
-  - code_block: |-
+  - code_block: |2-
       {
-        "token": "string"
+        "token": "string",
+        "expires": 0,
+        "duration": 0
       }
     title: 200 OK
     language: json
-  - code_block: |-
+  - code_block: |2-
       {
         "type": "string",
         "title": "string",
@@ -50,7 +49,7 @@ right_code_blocks:
         "additionalProp2": "string",
         "additionalProp3": "string"
       }
-    title: 400 BadRequest
+    title: 400 Bad Request
     language: json
   - code_block: |2-
       {
