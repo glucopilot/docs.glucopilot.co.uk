@@ -1,33 +1,27 @@
 ---
-title: /api/v1/identity/login
-position_number: 1.2
+title: /api/v1/identity/verify-email
+position_number: 1.3
 type: post
-description: Authenticates a user
+description: Verifies a user's email address
 parameters:
-  - name: email
-    content: User's email address
-  - name: password
-    content: User's password
+  - name: token
+    content: The verification token sent to the user's email address
 content_markdown: |-
-  The user is logged in and a JWT token is returned
+  The user's email address is verified using the provided token.
   {: .success}
 
-  Authenticates a user, returning a JWT token if successful.
+  Verifies a user's email address using the provided token.
 left_code_blocks:
   - code_block: |-
-      {
-        "email": "user@example.com",
-        "password": "string",
-      }
-    title: JSON
-    language: json
+      curl http://api.myapp.com/api/v1/identity/verify-email?token=string
+    title: Curl
+    language: curl
 right_code_blocks:
   - code_block: |-
-      {
-        "token": "string"
-      }
+      <h1>Success</h1>
+      <p>Your email has been verified.</p>
     title: 200 OK
-    language: json
+    language: html
   - code_block: |-
       {
         "type": "string",
