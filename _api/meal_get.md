@@ -1,6 +1,6 @@
 ---
 title: /api/v1/meals/:id
-position_number: 1.1
+position_number: 1.2
 type: get
 description: Get meal
 parameters:
