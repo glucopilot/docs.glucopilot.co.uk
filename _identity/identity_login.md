@@ -16,17 +16,18 @@ content_markdown: |-
 left_code_blocks:
   - code_block: |-
       {
-        "token": "string",
-        "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "email": "string",
-        "isVerified": true
+        "password": "string",
       }
     title: JSON
     language: json
 right_code_blocks:
   - code_block: |-
       {
-        "token": "string"
+        "token": "string",
+        "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "string",
+        "isVerified": true
       }
     title: 200 OK
     language: json
