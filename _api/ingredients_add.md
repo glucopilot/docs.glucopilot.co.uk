@@ -1,36 +1,38 @@
 ---
-title: /api/v1/identity/login
-position_number: 1.2
+title: /api/v1/ingredients
+position_number: 3.1
 type: post
-description: Authenticates a user
+description: Add ingredient
 parameters:
-  - name: email
-    content: User's email address
-  - name: password
-    content: User's password
 content_markdown: |-
-  The user is logged in and a JWT token is returned
-  {: .success}
-
-  Authenticates a user, returning a JWT token if successful.
+  Adds the ingredient with the given name.
 left_code_blocks:
   - code_block: |-
       {
-        "token": "string",
-        "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "email": "string",
-        "isVerified": true
+        "name": "string",
+        "carbs": 0,
+        "protein": 0,
+        "fat": 0,
+        "calories": 0,
+        "uom": "Unit"
       }
     title: JSON
     language: json
 right_code_blocks:
-  - code_block: |-
-      {
-        "token": "string"
-      }
-    title: 200 OK
+  - code_block: |2-
+        {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "created": "2025-04-12T20:26:31.607Z",
+            "name": "string",
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0,
+            "calories": 0,
+            "uom": "Unit"
+        }
+    title: 200 Ok
     language: json
-  - code_block: |-
+  - code_block: |2-
       {
         "type": "string",
         "title": "string",
