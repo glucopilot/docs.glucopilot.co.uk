@@ -1,5 +1,5 @@
 ---
-title: /api/v1/ingredients/
+title: /api/v1/ingredients/:id
 position_number: 3.2
 type: patch
 description: Update ingredient

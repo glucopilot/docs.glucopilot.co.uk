@@ -1,9 +1,11 @@
 ---
-title: /api/v1/meals/
+title: /api/v1/meals/:id
 position_number: 1.2
 type: patch
 description: Update meal
 parameters:
+  - name: id
+    content: The id of the updated meal
 content_markdown: |-
   The meal for the given id.
 left_code_blocks:
