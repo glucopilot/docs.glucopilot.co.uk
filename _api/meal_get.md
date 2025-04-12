@@ -39,6 +39,6 @@ right_code_blocks:
     title: 200 OK
     language: json
   - code_block: |2-
-    title: 404 Not Found
+    title: 404 NotFound
     language: json
 ---

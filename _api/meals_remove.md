@@ -1,31 +1,20 @@
 ---
-title: /api/v1/librelink/login
-position_number: 1.0
-type: post
-description: LibreLink Authenticate
+title: /api/v1/meals/:id
+position_number: 1.3
+type: delete
+description: Remove meal
 parameters:
-  - name: username
-    content: The username of the LibreLink Up user
-  - name: password
-    content: The password of the LibreLink Up user
-content_markdown: |-
-  Authenticates GlucoPilot patient with LibreLink Up.
+  - name: id
+    content: Meal id
 left_code_blocks:
   - code_block: |-
-      {
-        "username": "string",
-        "password": "string"
-      }
-    title: JSON
-    language: json
+      curl http://api.myapp.com/api/v1/meals/3fa85f64-5717-4562-b3fc-2c963f66afa6 \
+      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+    title: Curl
+    language: bash
 right_code_blocks:
   - code_block: |2-
-      {
-        "token": "string",
-        "expires": 0,
-        "duration": 0
-      }
-    title: 200 OK
+    title: 204 NoContent
     language: json
   - code_block: |2-
       {
@@ -63,5 +52,8 @@ right_code_blocks:
         ]
       }
     title: 401 Unauthorized
+    language: json
+  - code_block: |2-
+    title: 404 NotFound
     language: json
 ---
