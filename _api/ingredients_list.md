@@ -1,36 +1,44 @@
 ---
-title: /api/v1/identity/login
-position_number: 1.2
-type: post
-description: Authenticates a user
+title: /api/v1/ingredients
+position_number: 3.0
+type: get
+description: List ingredients
 parameters:
-  - name: email
-    content: User's email address
-  - name: password
-    content: User's password
+  - name: page
+    content: Page number to retrieve
+  - name: pageSize
+    content: Number of ingredients to retrieve per page
 content_markdown: |-
-  The user is logged in and a JWT token is returned
-  {: .success}
+  Ingredients are ordered by date descending.
+  {: .info }
 
-  Authenticates a user, returning a JWT token if successful.
+  Paginates all ingredients.
 left_code_blocks:
   - code_block: |-
-      {
-        "token": "string",
-        "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "email": "string",
-        "isVerified": true
-      }
-    title: JSON
-    language: json
+      curl http://api.myapp.com/api/v1/ingredients?Page=0&PageSize=10 \
+      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+    title: Curl
+    language: bash
 right_code_blocks:
-  - code_block: |-
+  - code_block: |2-
       {
-        "token": "string"
+        "numberOfPages": 0,
+        "ingredients": [
+            {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name": "string",
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0,
+                "calories": 0,
+                "uom": "Unit",
+                "created": "2025-04-12T20:13:22.207Z"
+            }
+        ]
       }
     title: 200 OK
     language: json
-  - code_block: |-
+  - code_block: |2-
       {
         "type": "string",
         "title": "string",

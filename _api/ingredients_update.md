@@ -1,36 +1,39 @@
 ---
-title: /api/v1/identity/login
-position_number: 1.2
-type: post
-description: Authenticates a user
+title: /api/v1/ingredients/
+position_number: 3.2
+type: patch
+description: Update ingredient
 parameters:
-  - name: email
-    content: User's email address
-  - name: password
-    content: User's password
+  - name: id
+    content: The id of the updated ingredient
 content_markdown: |-
-  The user is logged in and a JWT token is returned
-  {: .success}
-
-  Authenticates a user, returning a JWT token if successful.
+  The ingredient for the given id.
 left_code_blocks:
   - code_block: |-
       {
-        "token": "string",
-        "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "email": "string",
-        "isVerified": true
+        "name": "string",
+        "carbs": 0,
+        "protein": 0,
+        "fat": 0,
+        "calories": 0,
+        "uom": "Unit"
       }
     title: JSON
     language: json
 right_code_blocks:
-  - code_block: |-
+  - code_block: |2-
       {
-        "token": "string"
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "name": "string",
+        "carbs": 0,
+        "protein": 0,
+        "fat": 0,
+        "calories": 0,
+        "uom": "Unit"
       }
-    title: 200 OK
+    title: 200 Ok
     language: json
-  - code_block: |-
+  - code_block: |2-
       {
         "type": "string",
         "title": "string",
@@ -66,5 +69,8 @@ right_code_blocks:
         ]
       }
     title: 401 Unauthorized
+    language: json
+  - code_block: |2-
+    title: 404 NotFound
     language: json
 ---

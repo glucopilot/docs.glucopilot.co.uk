@@ -1,14 +1,14 @@
 ---
-title: /api/v1/meals/:id
-position_number: 1.3
+title: /api/v1/ingredients/:id
+position_number: 3.3
 type: delete
-description: Remove meal
+description: Remove ingredient
 parameters:
   - name: id
-    content: Meal id
+    content: Ingredient id
 left_code_blocks:
   - code_block: |-
-      curl http://api.myapp.com/api/v1/meals/3fa85f64-5717-4562-b3fc-2c963f66afa6 \
+      curl http://api.myapp.com/api/v1/ingredients/3fa85f64-5717-4562-b3fc-2c963f66afa6\
       -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
     title: Curl
     language: bash
