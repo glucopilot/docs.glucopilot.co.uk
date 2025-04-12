@@ -1,30 +1,27 @@
 ---
-title: /api/v1/readings
-position_number: 2.1
+title: /api/v1/librelink/pair
+position_number: 1.2
 type: post
-description: Add reading
+description: Pair connection
 parameters:
-  - name: created
-    content: Date and time the reading was taken
-  - name: glucoseLevel
-    content: Glucose level in mg/dL
 content_markdown: |-
-  The reading will be added to your account.
-  {: .success }
-
-  Adds a manual glucose reading to your account.
+  Lists all the users LibreLink connections.
 left_code_blocks:
   - code_block: |-
       {
-        "created": "2025-04-07T21:07:36.719Z",
-        "glucoseLevel": 0
+        "patientId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
       }
     title: JSON
     language: json
 right_code_blocks:
   - code_block: |2-
-      "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-    title: 201 Created
+      {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "patientId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "firstName": "string",
+        "lastName": "string"
+      }
+    title: 200 OK
     language: json
   - code_block: |2-
       {
