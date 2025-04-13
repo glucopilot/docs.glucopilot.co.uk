@@ -1,6 +1,6 @@
 ---
 title: /api/v1/injections
-position_number: 6.0
+position_number: 1.0
 type: get
 description: List injections
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: /api/v1/ingredients
-position_number: 3.1
+position_number: 1.1
 type: post
 description: Add ingredient
 parameters:

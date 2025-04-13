@@ -1,6 +1,6 @@
 ---
 title: /api/v1/insulins/:id
-position_number: 4.2
+position_number: 1.2
 type: get
 description: Get insulin
 parameters:

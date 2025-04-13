@@ -1,6 +1,6 @@
 ---
 title: /api/v1/injections
-position_number: 4.1
+position_number: 1.1
 type: post
 description: Add injection
 parameters:

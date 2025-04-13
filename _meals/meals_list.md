@@ -1,6 +1,6 @@
 ---
 title: /api/v1/meals
-position_number: 5.0
+position_number: 1.0
 type: get
 description: List meals
 parameters:

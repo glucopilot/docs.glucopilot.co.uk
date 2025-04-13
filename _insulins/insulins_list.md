@@ -1,6 +1,6 @@
 ---
 title: /api/v1/insulins
-position_number: 4.0
+position_number: 1.0
 type: get
 description: List insulins
 parameters:

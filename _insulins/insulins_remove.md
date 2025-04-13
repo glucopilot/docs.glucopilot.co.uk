@@ -1,6 +1,6 @@
 ---
 title: /api/v1/insulins/:id
-position_number: 4.4
+position_number: 1.4
 type: delete
 description: Remove insulin
 parameters:

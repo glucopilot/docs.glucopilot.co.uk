@@ -1,6 +1,6 @@
 ---
 title: /api/v1/ingredients
-position_number: 3.0
+position_number: 1.0
 type: get
 description: List ingredients
 parameters:

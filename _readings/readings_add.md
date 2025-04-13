@@ -1,6 +1,6 @@
 ---
 title: /api/v1/readings
-position_number: 6.1
+position_number: 1.1
 type: post
 description: Add reading
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: /api/v1/identity/register
-position_number: 1.1
+position_number: 1.0
 type: post
 description: Register a new user
 parameters:

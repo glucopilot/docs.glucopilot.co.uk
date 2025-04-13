@@ -1,6 +1,6 @@
 ---
 title: /api/v1/insulins
-position_number: 4.1
+position_number: 1.1
 type: post
 description: Add insulin
 parameters:

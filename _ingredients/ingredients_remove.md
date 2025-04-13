@@ -1,6 +1,6 @@
 ---
 title: /api/v1/ingredients/:id
-position_number: 3.3
+position_number: 1.3
 type: delete
 description: Remove ingredient
 parameters:

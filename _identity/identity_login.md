@@ -1,6 +1,6 @@
 ---
 title: /api/v1/identity/login
-position_number: 1.2
+position_number: 1.1
 type: post
 description: Authenticates a user
 parameters:

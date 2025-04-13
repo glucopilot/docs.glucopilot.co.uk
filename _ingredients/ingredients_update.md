@@ -1,6 +1,6 @@
 ---
 title: /api/v1/ingredients/:id
-position_number: 3.2
+position_number: 1.2
 type: patch
 description: Update ingredient
 parameters:
