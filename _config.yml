@@ -35,6 +35,9 @@ collections:
   readings:
     title: Readings
     position_number: 6
+  injections:
+    title: Injections
+    position_number: 7
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
