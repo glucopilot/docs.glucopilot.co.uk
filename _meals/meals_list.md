@@ -1,35 +1,36 @@
 ---
-title: /api/v1/readings
-position_number: 2.0
+title: /api/v1/meals
+position_number: 5.0
 type: get
-description: List readings
+description: List meals
 parameters:
-  - name: from
-    content: Date and time to retrieve readings from
-  - name: to
-    content: Date and time to retrieve readings to
+  - name: page
+    content: Page number to retrieve
+  - name: pageSize
+    content: Number of meals to retrieve per page
 content_markdown: |-
-  The from and to parameters are inclusive.
+  Meals are ordered by date descending.
   {: .info }
 
-  Lists all the readings between the specified dates, ordered by date descending.
+  Paginates all meals.
 left_code_blocks:
   - code_block: |-
-      curl http://api.myapp.com/api/v1/readings \
+      curl http://api.myapp.com/api/v1/meals?page=0&pageSize=10 \
       -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
     title: Curl
     language: bash
 right_code_blocks:
   - code_block: |2-
-      [
-        {
-          "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-          "created": "2025-04-06T14:39:00.848Z",
-          "glucoseLevel": 0,
-          "direction": "Decrease"
-        }
-      ]
+      {
+        "numberOfPages": 0,
+        "meals": [
+          {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "name": "string",
+            "created": "2025-04-07T23:07:22.802Z"
+          }
+        ]
+      }
     title: 200 OK
     language: json
   - code_block: |2-

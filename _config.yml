@@ -20,12 +20,21 @@ collections:
   identity:
     title: Identity
     position_number: 2
-  api:
-    title: APIs
-    position_number: 3
   librelink:
     title: LibreLink
+    position_number: 6
+  ingredients:
+    title: Ingredients
+    position_number: 3
+  insulins:
+    title: Insulins
     position_number: 4
+  meals:
+    title: Meals
+    position_number: 5
+  readings:
+    title: Readings
+    position_number: 6
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
