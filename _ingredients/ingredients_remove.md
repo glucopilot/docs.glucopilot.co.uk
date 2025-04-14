@@ -8,7 +8,7 @@ parameters:
     content: Ingredient id
 left_code_blocks:
   - code_block: |-
-      curl -X DELETE http://api.myapp.com/api/v1/ingredients/3fa85f64-5717-4562-b3fc-2c963f66afa6\
+      curl -X DELETE http://api.myapp.com/api/v1/ingredients/3fa85f64-5717-4562-b3fc-2c963f66afa6 \
       -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
     title: Curl
     language: bash
