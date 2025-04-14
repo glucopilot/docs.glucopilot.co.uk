@@ -1,5 +1,5 @@
 ---
-title: /api/v1/injetions/:id
+title: /api/v1/injections/:id
 position_number: 1.3
 type: patch
 description: Update injection
