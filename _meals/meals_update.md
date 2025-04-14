@@ -1,6 +1,6 @@
 ---
 title: /api/v1/meals/:id
-position_number: 5.3
+position_number: 1.3
 type: patch
 description: Update meal
 parameters:

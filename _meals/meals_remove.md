@@ -1,6 +1,6 @@
 ---
 title: /api/v1/meals/:id
-position_number: 5.4
+position_number: 1.4
 type: delete
 description: Remove meal
 parameters:

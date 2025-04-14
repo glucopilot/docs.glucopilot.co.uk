@@ -1,6 +1,6 @@
 ---
 title: /api/v1/identity/verify-email
-position_number: 1.3
+position_number: 1.2
 type: post
 description: Verifies a user's email address
 parameters:

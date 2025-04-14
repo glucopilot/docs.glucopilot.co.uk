@@ -1,6 +1,6 @@
 ---
 title: /api/v1/readings
-position_number: 6.0
+position_number: 1.0
 type: get
 description: List readings
 parameters:

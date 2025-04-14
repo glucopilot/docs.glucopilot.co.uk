@@ -22,19 +22,22 @@ collections:
     position_number: 2
   librelink:
     title: LibreLink
-    position_number: 6
+    position_number: 3
   ingredients:
     title: Ingredients
-    position_number: 3
+    position_number: 4
+  injections:
+    title: Injections
+    position_number: 5
   insulins:
     title: Insulins
-    position_number: 4
+    position_number: 6
   meals:
     title: Meals
-    position_number: 5
+    position_number: 7
   readings:
     title: Readings
-    position_number: 6
+    position_number: 8
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

@@ -1,36 +1,39 @@
 ---
-title: /api/v1/ingredients
-position_number: 1.1
-type: post
-description: Add ingredient
+title: /api/v1/injections
+position_number: 1.0
+type: get
+description: List injections
 parameters:
+  - name: page
+    content: Page number to retrieve
+  - name: pageSize
+    content: Number of injections to retrieve per page
 content_markdown: |-
-  Adds the ingredient with the given name.
+  Injections are ordered by date descending.
+  {: .info }
+
+  Paginates all injections.
 left_code_blocks:
   - code_block: |-
-      {
-        "name": "string",
-        "carbs": 0,
-        "protein": 0,
-        "fat": 0,
-        "calories": 0,
-        "uom": "Unit"
-      }
-    title: JSON
-    language: json
+      curl http://api.myapp.com/api/v1/injections?Page=1&PageSize=1 \
+      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+    title: Curl
+    language: bash
 right_code_blocks:
   - code_block: |2-
-        {
+      {
+        "numberOfPages": 0,
+        "injections": [
+            {
             "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            "created": "2025-04-12T20:26:31.607Z",
-            "name": "string",
-            "carbs": 0,
-            "protein": 0,
-            "fat": 0,
-            "calories": 0,
-            "uom": "Unit"
-        }
-    title: 200 Ok
+            "created": "2025-04-13T21:51:38.532Z",
+            "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "insulinName": "string",
+            "units": 0
+            }
+        ]
+      }
+    title: 200 OK
     language: json
   - code_block: |2-
       {
