@@ -1,20 +1,55 @@
 ---
 title: /api/v1/injections/:id
-position_number: 1.4
-type: delete
-description: Remove injection
+position_number: 1.3
+type: patch
+description: Update injection
 parameters:
   - name: id
-    content: Injection id
+    content: The id of the updated injection
+content_markdown: |-
+  The injection for the given id.
 left_code_blocks:
   - code_block: |-
-      curl -X DELETE http://api.myapp.com/api/v1/injections/3fa85f64-5717-4562-b3fc-2c963f66afa6 \
-      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
-    title: Curl
-    language: bash
+      {
+        "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "units": 0,
+        "type": "Bolus"
+      }
+    title: JSON
+    language: json
 right_code_blocks:
+  - code_block: |-
+      {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "insulinName": "string",
+        "units": 0
+      }
+    title: JSON
+    language: json
   - code_block: |2-
-    title: 204 NoContent
+      {
+        "type": "string",
+        "title": "string",
+        "status": 0,
+        "detail": "string",
+        "instance": "string",
+        "errors": {
+          "additionalProp1": [
+            "string"
+          ],
+          "additionalProp2": [
+            "string"
+          ],
+          "additionalProp3": [
+            "string"
+          ]
+        },
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    title: 400 BadRequest
     language: json
   - code_block: |2-
       {
