@@ -10,7 +10,8 @@ left_code_blocks:
   - code_block: |-
       {
         "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "units": 0
+        "units": 0,
+        "created": "2025-04-15T16:23:33.110Z"
       }
     title: JSON
     language: json
@@ -18,7 +19,7 @@ right_code_blocks:
   - code_block: |2-
       {
         "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "created": "2025-04-13T21:53:24.368Z",
+        "created": "2025-04-15T16:23:33.110Z",
         "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "units": 0
       }
