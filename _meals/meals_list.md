@@ -27,7 +27,26 @@ right_code_blocks:
           {
             "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
             "name": "string",
-            "created": "2025-04-07T23:07:22.802Z"
+            "created": "2025-04-15T10:47:54.134Z",
+            "totalCalories": 0,
+            "totalCarbs": 0,
+            "totalProtein": 0,
+            "totalFat": 0,
+            "mealIngredients": [
+              {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "ingredient": {
+                  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                  "name": "string",
+                  "carbs": 0,
+                  "protein": 0,
+                  "fat": 0,
+                  "calories": 0,
+                  "uom": "Unit"
+                },
+                "quantity": 0
+              }
+            ]
           }
         ]
       }
