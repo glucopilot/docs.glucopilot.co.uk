@@ -19,7 +19,11 @@ right_code_blocks:
       {
         "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "name": "string",
-        "created": "2025-04-09T21:24:05.859Z",
+        "created": "2025-04-15T10:48:56.009Z",
+        "totalCalories": 0,
+        "totalCarbs": 0,
+        "totalProtein": 0,
+        "totalFat": 0,
         "mealIngredients": [
           {
             "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
