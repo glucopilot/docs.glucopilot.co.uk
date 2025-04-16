@@ -20,10 +20,14 @@ right_code_blocks:
   - code_block: |2-
       {
         "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "created": "2025-04-15T19:34:15.886Z",
+        "created": "2025-04-16T13:43:25.897Z",
         "mealId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "mealName": "string",
         "injectionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        "insulinName": "string",
+        "insulinUnits": 0,
+        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "readingGlucoseLevel": 0
       }
     title: 201 Created
     language: json
