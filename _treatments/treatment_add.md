@@ -1,34 +1,18 @@
 ---
-title: /api/v1/meals
+title: /api/v1/treatments
 position_number: 1.1
 type: post
-description: Add meal
+description: Add treatment
 parameters:
-  - name: name
-    content: Meal name
-  - name: mealIngredients
-    content: Collection of meal ingredients
 content_markdown: |-
-  Adds the meal with the given name and ingredients.
+  Adds the treatment with the given injection, meal and reading.
 left_code_blocks:
   - code_block: |-
       {
-        "name": "string",
-        "mealIngredients": [
-          {
-            "ingredient": {
-              "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-              "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-              "name": "string",
-              "carbs": 0,
-              "protein": 0,
-              "fat": 0,
-              "calories": 0,
-              "uom": "Unit"
-            },
-            "quantity": 0
-          }
-        ]
+        "created": "2025-04-15T19:34:15.885Z",
+        "mealId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "injectionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
       }
     title: JSON
     language: json
@@ -36,7 +20,10 @@ right_code_blocks:
   - code_block: |2-
       {
         "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "name": "string"
+        "created": "2025-04-15T19:34:15.886Z",
+        "mealId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "injectionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
       }
     title: 201 Created
     language: json
@@ -76,5 +63,8 @@ right_code_blocks:
         ]
       }
     title: 401 Unauthorized
+    language: json
+  - code_block: |2-
+    title: 404 NotFound
     language: json
 ---
