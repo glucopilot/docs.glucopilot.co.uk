@@ -20,10 +20,25 @@ right_code_blocks:
   - code_block: |2-
       {
         "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "created": "2025-04-15T19:34:15.886Z",
-        "mealId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "injectionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        "created": "2025-04-16T13:39:53.212Z",
+        "type": "Meal",
+        "meal": {
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "name": "string",
+          "totalCarbs": 0,
+          "totalProtein": 0,
+          "totalFat": 0,
+          "totalCalories": 0
+        },
+        "injection": {
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "insulinName": "string",
+          "units": 0
+        },
+        "reading": {
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "glucoseLevel": 0
+        }
       }
     title: 201 Created
     language: json
