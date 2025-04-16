@@ -1,19 +1,19 @@
 ---
-title: /api/v1/injections/:id
-position_number: 1.3
+title: /api/v1/treatments/:id
+position_number: 1.2
 type: patch
-description: Update injection
+description: Update treatment
 parameters:
   - name: id
-    content: The id of the updated injection
+    content: The id of the updated treatment
 content_markdown: |-
-  The injection for the given id.
+  The treatment for the given id.
 left_code_blocks:
   - code_block: |-
       {
-        "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "units": 0,
-        "type": "Bolus"
+        "injectionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "mealId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
       }
     title: JSON
     language: json
@@ -21,9 +21,13 @@ right_code_blocks:
   - code_block: |-
       {
         "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "insulinId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "mealId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "mealName": "string",
+        "injectionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "insulinName": "string",
-        "units": 0
+        "insulinUnits": 0,
+        "readingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "readingGlucoseLevel": 0
       }
     title: 200 Ok
     language: json
