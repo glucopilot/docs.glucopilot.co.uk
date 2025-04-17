@@ -38,6 +38,9 @@ collections:
   readings:
     title: Readings
     position_number: 8
+  sensors:
+    title: Sensors
+    position_number: 9
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
