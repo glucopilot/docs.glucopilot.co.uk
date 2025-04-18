@@ -1,27 +1,28 @@
 ---
-title: /api/v1/identity/verify-email
-position_number: 1.2
+title: /api/v1/identity/is-verified
+position_number: 1.3
 type: get
-description: Verifies a user's email address
+description: Determines whether a user is email verified
 parameters:
   - name: token
     content: The verification token sent to the user's email address
 content_markdown: |-
-  The user's email address is verified using the provided token.
+  HTTP204 NoContent: The user's email has been verified.
   {: .success}
 
-  Verifies a user's email address using the provided token.
+  HTTP403 Forbidden: The user's email has not been verified.
+  {: .error}
+
+  Indicates whether or not the requested user is email verified or not.
 left_code_blocks:
   - code_block: |-
-      curl http://api.myapp.com/api/v1/identity/verify-email?token=string
+      curl http://api.myapp.com/api/v1/identity/is-verified?email=string
     title: Curl
     language: curl
 right_code_blocks:
   - code_block: |-
-      <h1>Success</h1>
-      <p>Your email has been verified.</p>
-    title: 200 OK
-    language: html
+    title: 204 NoContent
+    language: json
   - code_block: |-
       {
         "type": "string",
@@ -58,5 +59,18 @@ right_code_blocks:
         ]
       }
     title: 401 Unauthorized
+    language: json
+  - code_block: |-
+      {
+        "source": "string",
+        "message": "string",
+        "errorId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "supportMessage": "string",
+        "statusCode": 0,
+        "messages": [
+          "string"
+        ]
+      }
+    title: 403 Forbidden
     language: json
 ---
