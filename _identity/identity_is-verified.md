@@ -16,7 +16,7 @@ content_markdown: |-
   Indicates whether or not the requested user is email verified or not.
 left_code_blocks:
   - code_block: |-
-      curl http://api.myapp.com/api/v1/identity/is-verified?token=string
+      curl http://api.myapp.com/api/v1/identity/is-verified?email=string
     title: Curl
     language: curl
 right_code_blocks:
